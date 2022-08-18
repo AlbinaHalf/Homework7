@@ -11,6 +11,7 @@ for (int i = 0; i < m; i++)
     for (int j = 0; j < n; j++)
     {
         matrix[i,j] = new Random().NextDouble() * 20 - 10;
+        matrix[i,j] = Math.Round(matrix[i,j], 1);
         Console.Write(matrix[i, j] + " ");
     }
     Console.WriteLine();
